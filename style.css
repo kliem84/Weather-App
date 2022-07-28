@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Roboto', sans-serif;
     background: #222;
     background-image: url('https://source.unsplash.com/1600x900/?landscape');
     font-size: 120%;
@@ -32,7 +32,7 @@ button {
     border-radius: 50%;
     border: none;
     height: 46px;
-    width: 46px;
+    width: 60px;
     outline: none;
     background: white;
     color: black;
@@ -58,4 +58,30 @@ button:hover {
 
 h1.temp {
     margin: 0;
+    margin-bottom: 0.3em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 6px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
