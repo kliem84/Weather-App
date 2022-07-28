@@ -31,7 +31,7 @@ document.querySelector(".search button").addEventListener("click", function () {
 })
 
 document.querySelector(".search-bar").addEventListener("keyup", function (event) {
-    if (event.key = "Enter") {
+    if (event.code == 'Enter') {
         weather.search();
     }
 })
